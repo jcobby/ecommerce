@@ -1,0 +1,25 @@
+/* Custom CSS for the water flow effect */
+.water-flow {
+    position: absolute;
+    top: -200%;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    background: linear-gradient(120deg, rgba(0, 147, 233, 0.5), rgba(0, 233, 147, 0.5));
+    transition: top 0.5s ease-in-out;
+    z-index: 0;
+  }
+  
+  .card-bg-animation:hover .water-flow {
+    top: 0;
+  }
+  
+  .card-bg-animation {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-bg-animation .water-flow {
+    z-index: 0;
+  }
+  
