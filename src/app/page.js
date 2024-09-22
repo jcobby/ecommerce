@@ -11,6 +11,7 @@ import ProductCard from "./components/ProductCard";
 import products from "./products";
 import CategoriesCard from "./components/CategoriesCard";
 import CategoriesTypes from "./categoriesTypes";
+import { LocalShipping, SupportAgent, MonetizationOn } from '@mui/icons-material'; // MUI Icons
 
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -284,29 +285,124 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="pt-5 h-">
+      <div className="pt-5 h-full">
         <div className="flex gap-4 items-center mb-8">
           <div className="h-20 w-10 rounded-lg bg-orange-400"></div>
           <div className="font-bold text-orange-400 text-2xl">Featured</div>
         </div>
 
-        <div className="flex  items-end justify-between">
+        <div className="flex  items-end justify-between pb-10">
           <div className="flex space-x-28 items-end">
             <div className="text-6xl font-bold">New Arrival</div>
           </div>
         </div>
-        <div className="w-full grid grid-cols-2">
-          <div className="w-full col-span-1 bg-blue-500 h-44"></div>
-          <div className="grid col-span-2 grid-row-2 w-full h-28">
-            <div className="row-span-1 w-full bg-yellow-400"></div>
-            <div className="grid row-span-2 grid-cols-2 w-full">
-              <div className="col-span-1 bg-green-500 w-full"></div>
+        <div className="flex h-[800px]">
+      {/* Left Half - First Card */}
+      <div className="w-1/2 p-4">
+        <div className="bg-blue-500 h-full rounded-lg shadow-lg relative">
+          <div className="w-full h-full">
+            <img
+              src="./newArrival/ps4.png"
+              alt="Card 1"
+              className="object-contain rounded-lg h-full w-full aspect-video"
+            />
+          </div>
+          {/* Name, Description, and Button */}
+          <div className="absolute bottom-10 left-10 text-left">
+            <h3 className="text-4xl font-bold pb-5 text-white">PlayStation 4</h3>
+            <p className="text-xl text-white pb-5">Next-gen gaming console with powerful features.</p>
+            <button className="mt-2 px- py-2 bg- text-white rounded-lg underline text-2xl  transition-all duration-300">
+              Shop Now
+            </button>
+          </div>
+        </div>
+      </div>
 
-              <div className="col-span-2 bg-red-500 w-full"></div>
+      {/* Right Side - Big Card on Top and Two Cards Below */}
+      <div className="w-1/2 p-4 flex flex-col space-y-4">
+        {/* Big Card */}
+        <div className=" flex-1 h-1/2 rounded-lg shadow-lg relative bg-blue-500">
+          <div className="w-full h-full flex items-center justify-end">
+            <img
+              src="./newArrival/womenClothing.png"
+              alt="Card 2"
+              className="object-contain rounded-lg w-3/4 h-full aspect-video"
+            />
+          </div>
+          {/* Name, Description, and Button */}
+          <div className="absolute bottom-4 left-4 text-left ">
+            <h3 className="text-2xl font-bold pb-2 text-white">Women Clothing</h3>
+            <p className="text-xl text-white pb-2">Trendy and fashionable outfits for every occasion.</p>
+            <button className="mt-2 px- py-2 bg- text-white rounded-lg underline text-2xl hover:bg-white hover:text-blue-500 transition-all duration-300">
+              Shop Now
+            </button>
+          </div>
+        </div>
+
+        {/* Bottom Two Cards */}
+        <div className="flex space-x-4 h-1/2">
+          <div className="bg-blue-500 w-1/2 rounded-lg shadow-lg relative">
+            <div className="w-full h-full">
+              <img
+                src="./newArrival/amazonSpeaker.png"
+                alt="Card 3"
+                className="object-contain rounded-lg w-full h-full aspect-square"
+              />
+            </div>
+            {/* Name, Description, and Button */}
+            <div className="absolute bottom-10 left-10 text-left">
+              <h3 className="text-2xl font-bold pb-2 text-white">Amazon Speaker</h3>
+              <p className="text-xl text-white pb-2">Smart speaker with Alexa voice assistant.</p>
+              <button className="mt-2 px- py-2 bg-blue-500 text-white rounded-lg underline text-2xl hover:bg-white hover:text-blue-500 transition-all duration-300">
+                Shop Now
+              </button>
+            </div>
+          </div>
+          <div className="bg-blue-500 w-1/2 rounded-lg shadow-lg relative">
+            <div className="w-full h-full">
+              <img
+                src="./newArrival/perfume.png"
+                alt="Card 4"
+                className="object-contain rounded-lg w-full h-full aspect-square"
+              />
+            </div>
+            {/* Name, Description, and Button */}
+            <div className="absolute bottom-10 left-10 text-left">
+              <h3 className="text-2xl font-bold pb-2 text-white">Perfume</h3>
+              <p className="text-xl text-white pb-2">Long-lasting fragrance with exotic scents.</p>
+              <button className="mt-2 px- py-2 bg-blue-500 text-white rounded-lg underline text-2xl hover:bg-white hover:text-blue-500 transition-all duration-300">
+                Shop Now
+              </button>
             </div>
           </div>
         </div>
       </div>
+    </div>
+      </div>
+
+      <div className="flex justify-around items-start py-10 bg-gray-100">
+      {/* First Column */}
+      <div className="flex flex-col items-center w-1/3 text-center p-4">
+        <LocalShipping className="text-blue-500" style={{ fontSize: '60px', marginBottom: '16px' }} /> {/* Icon */}
+        <h3 className="text-2xl font-bold mb-2">FAST AND SECURE DELIVERY</h3> {/* Title */}
+        <p className="text-gray-700">Delivery available across the country</p> {/* Description */}
+      </div>
+
+      {/* Second Column */}
+      <div className="flex flex-col items-center w-1/3 text-center p-4">
+        <SupportAgent className="text-blue-500" style={{ fontSize: '60px', marginBottom: '16px' }} /> {/* Icon */}
+        <h3 className="text-2xl font-bold mb-2">24/7 CUSTOMER SERVICE</h3> {/* Title */}
+        <p className="text-gray-700">Friendly 24/7 customer support</p> {/* Description */}
+      </div>
+
+      {/* Third Column */}
+      <div className="flex flex-col items-center w-1/3 text-center p-4">
+        <MonetizationOn className="text-blue-500" style={{ fontSize: '60px', marginBottom: '16px' }} /> {/* Icon */}
+        <h3 className="text-2xl font-bold mb-2">MONEY BACK GUARANTEE</h3> {/* Title */}
+        <p className="text-gray-700">We return money within 30 days</p> {/* Description */}
+      </div>
+    </div>
+      
     </div>
   );
 }
