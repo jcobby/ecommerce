@@ -11,6 +11,8 @@ const products = [
     rating: 4.8,
     stock: 25,
     isFeatured: true,
+    discount: '10%',
+
   },
   {
     id: 2,
@@ -23,6 +25,8 @@ const products = [
     rating: 4.5,
     stock: 50,
     isFeatured: false,
+    discount: '5%',
+
   },
   {
     id: 3,
@@ -35,6 +39,8 @@ const products = [
     rating: 4.9,
     stock: 30,
     isFeatured: true,
+    discount: '15%',
+
   },
   {
     id: 4,
@@ -47,6 +53,8 @@ const products = [
     rating: 5.0,
     stock: 10,
     isFeatured: true,
+    discount: '53%',
+
   },
   {
     id: 5,
@@ -59,6 +67,8 @@ const products = [
     rating: 4.3,
     stock: 40,
     isFeatured: false,
+    discount: '22%',
+
   },
   {
     id: 6,
@@ -71,6 +81,8 @@ const products = [
     rating: 4.7,
     stock: 35,
     isFeatured: false,
+    discount: '33%',
+
   },
   {
     id: 7,
@@ -83,6 +95,8 @@ const products = [
     rating: 4.2,
     stock: 75,
     isFeatured: false,
+    discount: '43%',
+
   },
   {
     id: 8,
@@ -95,6 +109,8 @@ const products = [
     rating: 4.9,
     stock: 20,
     isFeatured: true,
+    discount: '12%',
+
   },
   {
     id: 9,
@@ -107,6 +123,8 @@ const products = [
     rating: 4.7,
     stock: 15,
     isFeatured: false,
+    discount: '5%',
+
   },
   {
     id: 10,
@@ -119,6 +137,8 @@ const products = [
     rating: 4.6,
     stock: 45,
     isFeatured: true,
+    discount: '42%',
+
   },
   {
     id: 11,
@@ -131,6 +151,8 @@ const products = [
     rating: 4.8,
     stock: 25,
     isFeatured: true,
+    discount: '15%',
+
   },
   {
     id: 12,
@@ -143,6 +165,8 @@ const products = [
     rating: 5.0,
     stock: 8,
     isFeatured: true,
+    discount: '35%',
+
   },
   {
     id: 13,
@@ -155,6 +179,8 @@ const products = [
     rating: 4.9,
     stock: 30,
     isFeatured: false,
+    discount: '5%',
+
   },
   {
     id: 14,
@@ -167,6 +193,8 @@ const products = [
     rating: 4.6,
     stock: 40,
     isFeatured: false,
+    discount: '5%',
+
   },
   {
     id: 15,
@@ -179,6 +207,8 @@ const products = [
     rating: 4.3,
     stock: 55,
     isFeatured: false,
+    discount: '5%',
+
   },
   {
     id: 16,
@@ -191,6 +221,8 @@ const products = [
     rating: 4.8,
     stock: 60,
     isFeatured: true,
+    discount: '5%',
+
   },
   {
     id: 17,
@@ -203,6 +235,8 @@ const products = [
     rating: 4.7,
     stock: 20,
     isFeatured: true,
+    discount: '5%',
+
   },
   {
     id: 18,
@@ -215,6 +249,8 @@ const products = [
     rating: 4.4,
     stock: 30,
     isFeatured: false,
+    discount: '5%',
+
   },
   {
     id: 19,
@@ -227,6 +263,8 @@ const products = [
     rating: 4.7,
     stock: 35,
     isFeatured: false,
+    discount: '5%',
+
   },
   {
     id: 20,
@@ -239,6 +277,8 @@ const products = [
     rating: 4.9,
     stock: 12,
     isFeatured: true,
+    discount: '5%',
+
   },
 ];
 
