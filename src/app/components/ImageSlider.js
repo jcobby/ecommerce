@@ -13,7 +13,7 @@ function ImageSlider() {
   const images = [
     "/categoryimages/toys.png",
 
-    "/categoryimages/bag.jpeg",
+    "/categoryimages/bag.png",
     "/categoryimages/sneakers.png",
     "/categoryimages/phones.png",
     "/categoryimages/smartwatches.png",

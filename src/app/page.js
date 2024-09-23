@@ -380,7 +380,7 @@ export default function Home() {
     </div>
       </div>
 
-      <div className="flex justify-around items-start py-10 bg-gray-100">
+      <div className="flex justify-around items-start py-10 bg-">
       {/* First Column */}
       <div className="flex flex-col items-center w-1/3 text-center p-4">
         <LocalShipping className="text-blue-500" style={{ fontSize: '60px', marginBottom: '16px' }} /> {/* Icon */}
@@ -402,6 +402,8 @@ export default function Home() {
         <p className="text-gray-700">We return money within 30 days</p> {/* Description */}
       </div>
     </div>
+
+    
       
     </div>
   );

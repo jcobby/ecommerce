@@ -13,7 +13,7 @@ function ProductCard({ image, name, price, discount, rating }) {
           <img
             src={image}
             alt={name}
-            className="w-full h-full object-cover rounded-lg"
+            className="w-full h-full object-contain rounded-lg"
           />
 
           {/* Discount Badge */}
