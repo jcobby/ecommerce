@@ -1,19 +1,19 @@
-import React from 'react';
-import FavoriteIcon from '@mui/icons-material/Favorite'; // Like icon
-import VisibilityIcon from '@mui/icons-material/Visibility'; // Eye icon
-import StarIcon from '@mui/icons-material/Star'; // Star icon for ratings
+import React from "react";
+import FavoriteIcon from "@mui/icons-material/Favorite"; // Like icon
+import VisibilityIcon from "@mui/icons-material/Visibility"; // Eye icon
+import StarIcon from "@mui/icons-material/Star"; // Star icon for ratings
 
 function ProductCard({ image, name, price, discount, rating }) {
   return (
     <div className="flex flex-col items-center">
-      {/* Product Card */}
-      <div className="group border rounded-lg shadow-lg w-96 bg-white relative">
+      {/* Product Card - Square Shape */}
+      <div className="group border rounded-lg shadow-lg bg-white relative" style={{ width: "250px", height: "250px" }}>
         {/* Image with discount and icons */}
-        <div className="relative w-full h-72">
+        <div className="relative w-full h-full flex justify-center items-center">
           <img
             src={image}
             alt={name}
-            className="w-full h-full object-contain rounded-lg"
+            className="max-w-full max-h-full object-contain"
           />
 
           {/* Discount Badge */}
@@ -27,12 +27,12 @@ function ProductCard({ image, name, price, discount, rating }) {
           <div className="absolute top-2 right-2 flex flex-col space-y-2">
             {/* Like Icon */}
             <div className="bg-white p-2 rounded-full shadow-md cursor-pointer">
-              <FavoriteIcon style={{ fontSize: 20, color: 'red' }} />
+              <FavoriteIcon style={{ fontSize: 20, color: "red" }} />
             </div>
 
             {/* Eye Icon */}
             <div className="bg-white p-2 rounded-full shadow-md cursor-pointer">
-              <VisibilityIcon style={{ fontSize: 20, color: 'gray' }} />
+              <VisibilityIcon style={{ fontSize: 20, color: "gray" }} />
             </div>
           </div>
 
@@ -60,7 +60,7 @@ function ProductCard({ image, name, price, discount, rating }) {
                 key={index}
                 style={{
                   fontSize: 20,
-                  color: index < rating ? '#fbbf24' : '#d1d5db', // Show filled star for rating
+                  color: index < rating ? "#fbbf24" : "#d1d5db", // Show filled star for rating
                 }}
               />
             ))}

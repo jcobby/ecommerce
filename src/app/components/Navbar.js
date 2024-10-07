@@ -41,9 +41,9 @@ function Navbar() {
             <SearchIcon />
           </div>
         </div>
-        <div className='pl-6'>
+        <Link  href="/cart" className='pl-6'>
           <ShoppingCartIcon />
-        </div>
+        </Link>
         <Link
           href="/cart"
           className="text-lg text-black py-4 px-6 transition duration-300 ease-in-out hover:text-blue-300"
