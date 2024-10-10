@@ -45,13 +45,13 @@ function Navbar() {
           <ShoppingCartIcon />
         </Link>
         <Link
-          href="/cart"
+          href="/login"
           className="text-lg text-black py-4 px-6 transition duration-300 ease-in-out hover:text-blue-300"
         >
           Login
         </Link>
         <Link
-          href="/profile"
+          href="/register"
           className="text-lg bg-blue-500 text-white rounded-md py-4 px-4 transition duration-300 ease-in-out hover:text-blue-300 hover:bg-blue-300"
         >
           Register

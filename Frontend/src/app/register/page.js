@@ -27,7 +27,7 @@ function Page() {
             <input
               type="text"
               placeholder="Name"
-              className="w-full border-b-2 bg-transparent border-gray-300 py-2 px-4 focus:outline-none focus:border-blue-500"
+              className="w-full border-b-2 bg-transparent placeholder-gray-700 border-black py-2 px-4 focus:outline-none focus:border-blue-500"
             />
           </div>
 
@@ -36,7 +36,7 @@ function Page() {
             <input
               type="email"
               placeholder="Email"
-              className="w-full border-b-2 bg-transparent border-gray-300 py-2 px-4 focus:outline-none focus:border-blue-500"
+              className="w-full border-b-2 bg-transparent placeholder-gray-700 border-black py-2 px-4 focus:outline-none focus:border-blue-500"
             />
           </div>
 
@@ -45,7 +45,7 @@ function Page() {
             <input
               type="password"
               placeholder="Password"
-              className="w- border-b-2 bg-transparent border-gray-300 py-2 px-4 focus:outline-none focus:border-blue-500 w-96"
+              className="w- placeholder-gray-700 border-b-2 bg-transparent border-black py-2 px-4 focus:outline-none focus:border-blue-500 w-96"
             />
           </div>
 
