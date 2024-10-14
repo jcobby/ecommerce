@@ -3,6 +3,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const productRoutes = require("./routes/productRoutes");
+const authRoutes = require("./routes/authRoutes");
 require("dotenv").config();
 
 
@@ -20,6 +21,7 @@ mongoose.connect(process.env.MONGO_URI)
 
 // Use routes
 app.use("/api/products", productRoutes);
+app.use("/api/auth", authRoutes)
 
 // Test Route
 app.get("/", (req, res) => {

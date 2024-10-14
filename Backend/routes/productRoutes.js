@@ -2,6 +2,7 @@
 const express = require("express");
 const router = express.Router();
 const Product = require("../models/Product");
+const auth = require("../middleware/auth.js");
 
 // Get all products
 router.get("/", async (req, res) => {
@@ -27,7 +28,7 @@ router.get("/:id", async (req, res) => {
 });
 
 // Add a new product
-router.post("/", async (req, res) => {
+router.post("/", auth, async (req, res) => {
     try {
         const { name, description, price, category, images, stock, colors, size } = req.body;
 
